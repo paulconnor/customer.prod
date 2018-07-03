@@ -11,7 +11,7 @@ stages {
             sh 'curl -X POST -d @swagger.json http://34.212.226.36:8080/publishToProd -H "Content-Type: application/json"'
         }
     }
-    stage('Enable Monitoring - PAPIM') {
+    stage('Enable Management - Portal') {
         steps {
             sh 'curl -X POST -d @swagger.json http://34.212.226.36:8080/enablePAPIM -H "Content-Type: application/json"'     
         }
